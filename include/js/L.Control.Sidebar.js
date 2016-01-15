@@ -3,7 +3,7 @@ L.Control.Sidebar = L.Control.extend({
     includes: L.Mixin.Events,
 
     options: {
-        closeButton: true,
+        closeButton: false,
         position: 'right',
         autoPan: true,
     },
@@ -26,25 +26,11 @@ L.Control.Sidebar = L.Control.extend({
         // Style and attach content container
         L.DomUtil.addClass(content, l + 'control');
         container.appendChild(content);
-
-        // Create close button and attach it if configured
-        if (this.options.closeButton) {
-            var close = this._closeButton =
-                L.DomUtil.create('a', 'close', container);
-            close.innerHTML = 'x';
-        }
     },
 
     addTo: function (map) {
         var container = this._container;
         var content = this._contentContainer;
-
-        // Attach event to close button
-        if (this.options.closeButton) {
-            var close = this._closeButton;
-
-            L.DomEvent.on(close, 'click', this.hide, this);
-        }
 
         L.DomEvent
             .on(container, 'transitionend',
@@ -104,12 +90,6 @@ L.Control.Sidebar = L.Control.extend({
             .off(container, 'webkitTransitionEnd',
                 this._handleTransitionEvent, this);
 
-        if (this._closeButton && this._close) {
-            var close = this._closeButton;
-
-            L.DomEvent.off(close, 'click', this.hide, this);
-        }
-
         return this;
     },
 
@@ -154,10 +134,6 @@ L.Control.Sidebar = L.Control.extend({
 
     getContainer: function () {
         return this._contentContainer;
-    },
-
-    getCloseButton: function () {
-        return this._closeButton;
     },
 
     setContent: function (content) {

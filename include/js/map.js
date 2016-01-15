@@ -242,9 +242,6 @@ sidebar.update = function () {
   document.getElementById("sidebar-crimen-year").innerHTML = selectYear;
   document.getElementById("sidebar-crimen-total").innerHTML = Math.round(totalCrime);
 
-  // Updates logo
-  //document.getElementById("sidebar-crimen-logo").src = 'include/img/svg/' + crimeName + '.svg';
-
   // Updates name of crime
   var crimeNameAll = changeCrime(crimeName);
   document.getElementById("sidebar-crimen-nombre").innerHTML = crimeNameAll;

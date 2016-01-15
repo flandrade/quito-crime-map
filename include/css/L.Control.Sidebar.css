@@ -1,6 +1,7 @@
 .leaflet-sidebar-crime {
   top: 1%;
   position: absolute;
+  width: 35%;
   height: 96%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,65 +30,9 @@
     font-size: 1.1em;
     .leaflet-touch .leaflet-sidebar-crime > .leaflet-control {
       box-shadow: none;
-
       background-clip: padding-box; }
-  @media (max-width: 767px) {
-    .leaflet-sidebar-crime {
-      width: 100%;
-      padding: 0; }
-      .leaflet-sidebar-crime.left.visible ~ .leaflet-left {
-        left: 100%; }
-      .leaflet-sidebar-crime.right.visible ~ .leaflet-right {
-        right: 100%; }
-      .leaflet-sidebar-crime.left {
-        left: -100%; }
-        .leaflet-sidebar-crime.left.visible {
-          left: 0; }
-      .leaflet-sidebar-crime.right {
-        right: -100%; }
-        .leaflet-sidebar-crime.right.visible {
-          right: 0; }
-      .leaflet-sidebar-crime > .leaflet-control {
-        box-shadow: none;
-        -webkit-border-radius: 0;
-        border-radius: 0; }
-        .leaflet-touch .leaflet-sidebar-crime > .leaflet-control {
-          border: 0; } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .leaflet-sidebar-crime {
-      width: 30%; }
-      .leaflet-sidebar-crime.left.visible ~ .leaflet-left {
-        left: 30%; }
-      .leaflet-sidebar-crime.right.visible ~ .leaflet-right {
-        right: 30%; } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .leaflet-sidebar-crime {
-      width: 35%; }
-      .leaflet-sidebar-crime.left.visible ~ .leaflet-left {
-        left: 35%; }
-      .leaflet-sidebar-crime.right.visible ~ .leaflet-right {
-        right: 35%; } }
-  @media (min-width: 1200px) {
-    .leaflet-sidebar-crime {
-      width: 35%; }
-      .leaflet-sidebar-crime.left.visible ~ .leaflet-left {
-        left: 35%; }
-      .leaflet-sidebar-crime.right.visible ~ .leaflet-right {
-        right: 35%; } }
-  .leaflet-sidebar-crime .close {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    width: 31px;
-    height: 31px;
-    color: #000;
-    font-size: 25pt;
-    line-height: 0.8em;
-    text-align: center;
-    -webkit-border-radius: 16px;
-    border-radius: 16px;
-    cursor: pointer;
-    z-index: 8; }
+
+
 
 .leaflet-left {
   transition: left 0.5s; }
