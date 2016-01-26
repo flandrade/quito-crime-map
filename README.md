@@ -2,7 +2,7 @@
 
 Interactive Choropleth Crime Map of Quito made with [Leaflet](http://leafletjs.com/), [Bootstrap](http://getbootstrap.com/) and [Leaflet-sidebar](https://github.com/Turbo87/leaflet-sidebar).
 
-You can read about the development process and methodology in my blog.
+I wrote a blog post that goes into more detail about the development process and methodology.
 
 ## Features
 Crime in Quito (2013 - 2014):

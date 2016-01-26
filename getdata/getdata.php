@@ -1,38 +1,5 @@
 <?php
 
-  // Data in order to access API
-  $auth_key = "986e0eba43e5b51f06ed554efa8a37e24490ecd5";
-
-  // Homicidios
-  //generateJSON($auth_key, "NUMER-DE-HOMIC-2013", 2013, "homicidios-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-HOMIC-2014", 2014, "homicidios-2014.json");
-
-  // Robos de automotores
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-81500", 2013, "robos-automotores-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-73309", 2014, "robos-automotores-2014.json");
-
-  // Robos de accesorios de automotores
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-67518", 2013, "robos-accesorios-2013.json");
-  generateJSON($auth_key, "NUMER-DE-DENUN-POR-78781", 2014, "robos-accesorios-2014.json");
-
-  // Robos de bienes en automotores
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-28521", 2013, "robos-bienes-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-75707", 2014, "robos-bienes-2014.json");
-
-  // Robos de domicilios
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-88331", 2013, "robos-domicilios-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-82965", 2014, "robos-domicilios-2014.json");
-
-  // Robos a locales comerciales
-  //generateJSON($auth_key, "NUMER-DE-DENUN-DE-45730", 2013, "robos-locales-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-DENUN-DE-77097", 2014, "robos-locales-2014.json");
-
-  // Robos a personas
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-62026", 2013, "robos-personas-2013.json");
-  //generateJSON($auth_key, "NUMER-DE-DENUN-POR-37458", 2014, "robos-personas-2014.json");
-
-  echo "Done";
-
   // Function to generate JSON
   function generateJSON($auth_key, $guid, $year, $filename){
     // Get json from API
