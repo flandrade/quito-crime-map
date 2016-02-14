@@ -2,14 +2,9 @@
 
 Interactive Choropleth Crime Map of Quito made with [Leaflet](http://leafletjs.com/), [Bootstrap](http://getbootstrap.com/) and [Leaflet-sidebar](https://github.com/Turbo87/leaflet-sidebar).
 
-I wrote a blog post that goes into more detail about the development process and methodology.
+Inspired by the [NYPD Crime Map](https://maps.nyc.gov/crime/), I created an [interactive crime map of Quito](http://flandrade.github.io/quito-crime-map/) using [Leaflet](http://leafletjs.com/). This map shows the crime rate by category and year, as reported to Policía Nacional del Ecuador. The administrative areas are shaded according to crime rate per 100,000 population.
 
-## Features
-Crime in Quito (2013 - 2014):
-- Murders
-- Motor vehicle theft
-- Burglary
-- Robbery
+Data was collected from [Datos Abiertos](http://datosabiertos.quito.gob.ec/), the official government site for open government. The crime categories represented here are the same categories used by the Police such as murders, motor vehicle theft, burglary and robbery.
 
 ## Demo:
 
